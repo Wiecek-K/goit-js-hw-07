@@ -34,4 +34,3 @@ const openImage = (e) => {
 	basicLightbox.create(`<img src=${e.target.dataset.source}>`).show();
 };
 gallery.addEventListener("click", openImage);
-console.log(galleryItems);
