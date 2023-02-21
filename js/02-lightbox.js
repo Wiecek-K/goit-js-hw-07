@@ -25,3 +25,7 @@ let galleryLightBox = new SimpleLightbox(".gallery a", {
 	captionsData: "alt",
 	captionDelay: 250,
 });
+galleryLightBox.on("shown.simplelightbox", function () {
+	const caption = document.querySelector(".sl-caption.pos-bottom");
+	caption.style.textAlign = "center";
+});
